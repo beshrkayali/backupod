@@ -1,0 +1,373 @@
+<?xml version="1.0" standalone="no"?> <!--*- mode: xml -*-->
+<!DOCTYPE glade-interface SYSTEM "http://glade.gnome.org/glade-2.0.dtd">
+
+<glade-interface>
+
+<widget class="GtkWindow" id="BackuPodForm">
+  <property name="visible">True</property>
+  <property name="title" translatable="yes">BackuPod 2.0</property>
+  <property name="type">GTK_WINDOW_TOPLEVEL</property>
+  <property name="window_position">GTK_WIN_POS_NONE</property>
+  <property name="modal">False</property>
+  <property name="default_width">450</property>
+  <property name="default_height">320</property>
+  <property name="resizable">True</property>
+  <property name="destroy_with_parent">False</property>
+  <property name="decorated">True</property>
+  <property name="skip_taskbar_hint">False</property>
+  <property name="skip_pager_hint">False</property>
+  <property name="type_hint">GDK_WINDOW_TYPE_HINT_NORMAL</property>
+  <property name="gravity">GDK_GRAVITY_NORTH_WEST</property>
+  <property name="focus_on_map">True</property>
+  <property name="urgency_hint">False</property>
+  <signal name="destroy" handler="on_BackuPodForm_destroy" last_modification_time="Wed, 16 Jan 2008 20:46:39 GMT"/>
+
+  <child>
+    <widget class="GtkVBox" id="ArangeBox">
+      <property name="visible">True</property>
+      <property name="homogeneous">False</property>
+      <property name="spacing">0</property>
+
+      <child>
+	<widget class="GtkMenuBar" id="MenuBar">
+	  <property name="visible">True</property>
+	  <property name="pack_direction">GTK_PACK_DIRECTION_RTL</property>
+	  <property name="child_pack_direction">GTK_PACK_DIRECTION_RTL</property>
+
+	  <child>
+	    <widget class="GtkMenuItem" id="mnuFile">
+	      <property name="visible">True</property>
+	      <property name="label" translatable="yes">_ملف</property>
+	      <property name="use_underline">True</property>
+	      <signal name="activate" handler="on_mnuFile_activate" last_modification_time="Wed, 16 Jan 2008 21:10:03 GMT"/>
+
+	      <child>
+		<widget class="GtkMenu" id="mnuFile_menu">
+
+		  <child>
+		    <widget class="GtkImageMenuItem" id="mnuFileLoadBackupFile">
+		      <property name="visible">True</property>
+		      <property name="tooltip" translatable="yes">فتح ملف مكتبة إحتياطية لعرض محتوياتها</property>
+		      <property name="label" translatable="yes">_فتح ملف مكتبة إحتياطية</property>
+		      <property name="use_underline">True</property>
+		      <signal name="activate" handler="on_mnuFileLoadBackupFile_activate" last_modification_time="Wed, 16 Jan 2008 21:10:03 GMT"/>
+		      <accelerator key="l" modifiers="GDK_CONTROL_MASK" signal="activate"/>
+
+		      <child internal-child="image">
+			<widget class="GtkImage" id="image366">
+			  <property name="visible">True</property>
+			  <property name="pixbuf">sIcon.png</property>
+			  <property name="xalign">0.5</property>
+			  <property name="yalign">0.5</property>
+			  <property name="xpad">0</property>
+			  <property name="ypad">0</property>
+			</widget>
+		      </child>
+		    </widget>
+		  </child>
+
+		  <child>
+		    <widget class="GtkSeparatorMenuItem" id="separator2">
+		      <property name="visible">True</property>
+		    </widget>
+		  </child>
+
+		  <child>
+		    <widget class="GtkImageMenuItem" id="mnuFileQuit">
+		      <property name="visible">True</property>
+		      <property name="tooltip" translatable="yes">الخروج من برنامج BackuPod</property>
+		      <property name="label" translatable="yes">_الخروج من BackuPod</property>
+		      <property name="use_underline">True</property>
+		      <signal name="activate" handler="on_mnuFileQuit_activate" last_modification_time="Wed, 16 Jan 2008 21:15:22 GMT"/>
+		      <accelerator key="q" modifiers="GDK_CONTROL_MASK" signal="activate"/>
+
+		      <child internal-child="image">
+			<widget class="GtkImage" id="image367">
+			  <property name="visible">True</property>
+			  <property name="stock">gtk-quit</property>
+			  <property name="icon_size">1</property>
+			  <property name="xalign">0.5</property>
+			  <property name="yalign">0.5</property>
+			  <property name="xpad">0</property>
+			  <property name="ypad">0</property>
+			</widget>
+		      </child>
+		    </widget>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+
+	  <child>
+	    <widget class="GtkMenuItem" id="mnuTools">
+	      <property name="visible">True</property>
+	      <property name="label" translatable="yes">_أدوات</property>
+	      <property name="use_underline">True</property>
+	      <signal name="activate" handler="on_mnuTools_activate" last_modification_time="Wed, 16 Jan 2008 21:14:56 GMT"/>
+
+	      <child>
+		<widget class="GtkMenu" id="mnuTools_menu">
+
+		  <child>
+		    <widget class="GtkImageMenuItem" id="mnuToolsCreateBackupFile">
+		      <property name="visible">True</property>
+		      <property name="tooltip" translatable="yes">صنع مكتبة إحتياطية للمكتبة الموسيقية الحالية في جهازك الـ iPod</property>
+		      <property name="label" translatable="yes">_صنع مكتبة إحتياطية</property>
+		      <property name="use_underline">True</property>
+		      <signal name="activate" handler="on_mnuToolsCreateBackupFile_activate" last_modification_time="Wed, 16 Jan 2008 21:23:58 GMT"/>
+		      <accelerator key="F9" modifiers="0" signal="activate"/>
+
+		      <child internal-child="image">
+			<widget class="GtkImage" id="image368">
+			  <property name="visible">True</property>
+			  <property name="pixbuf">sBackup.png</property>
+			  <property name="xalign">0.5</property>
+			  <property name="yalign">0.5</property>
+			  <property name="xpad">0</property>
+			  <property name="ypad">0</property>
+			</widget>
+		      </child>
+		    </widget>
+		  </child>
+
+		  <child>
+		    <widget class="GtkImageMenuItem" id="mnuToolsRestoretoiPod">
+		      <property name="visible">True</property>
+		      <property name="tooltip" translatable="yes">إستعادة مكتبة إحتياطية سابقة إلى جهازك الـ iPod</property>
+		      <property name="label" translatable="yes">إ_ستعادة مكتبة إحتياطية</property>
+		      <property name="use_underline">True</property>
+		      <signal name="activate" handler="on_mnuToolsRestoretoiPod_activate" last_modification_time="Wed, 16 Jan 2008 22:12:07 GMT"/>
+
+		      <child internal-child="image">
+			<widget class="GtkImage" id="image369">
+			  <property name="visible">True</property>
+			  <property name="pixbuf">sRestore.png</property>
+			  <property name="xalign">0.5</property>
+			  <property name="yalign">0.5</property>
+			  <property name="xpad">0</property>
+			  <property name="ypad">0</property>
+			</widget>
+		      </child>
+		    </widget>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+
+	  <child>
+	    <widget class="GtkMenuItem" id="mnuHelp">
+	      <property name="visible">True</property>
+	      <property name="label" translatable="yes">_مساعدة</property>
+	      <property name="use_underline">True</property>
+	      <signal name="activate" handler="on_mnuHelp_activate" last_modification_time="Wed, 16 Jan 2008 21:26:15 GMT"/>
+
+	      <child>
+		<widget class="GtkMenu" id="mnuHelp_menu">
+
+		  <child>
+		    <widget class="GtkImageMenuItem" id="mnuHelpAbout">
+		      <property name="visible">True</property>
+		      <property name="tooltip" translatable="yes">معلومات أكثر عن BackuPod</property>
+		      <property name="label" translatable="yes">_حول BackuPod</property>
+		      <property name="use_underline">True</property>
+		      <signal name="activate" handler="on_mnuHelpAbout_activate" last_modification_time="Wed, 16 Jan 2008 21:26:15 GMT"/>
+
+		      <child internal-child="image">
+			<widget class="GtkImage" id="image370">
+			  <property name="visible">True</property>
+			  <property name="stock">gtk-about</property>
+			  <property name="icon_size">1</property>
+			  <property name="xalign">0.5</property>
+			  <property name="yalign">0.5</property>
+			  <property name="xpad">0</property>
+			  <property name="ypad">0</property>
+			</widget>
+		      </child>
+		    </widget>
+		  </child>
+		</widget>
+	      </child>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="padding">0</property>
+	  <property name="expand">False</property>
+	  <property name="fill">False</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkToolbar" id="ToolBar">
+	  <property name="visible">True</property>
+	  <property name="orientation">GTK_ORIENTATION_HORIZONTAL</property>
+	  <property name="toolbar_style">GTK_TOOLBAR_BOTH</property>
+	  <property name="tooltips">True</property>
+	  <property name="show_arrow">True</property>
+
+	  <child>
+	    <widget class="GtkToolButton" id="btnLoadBackup">
+	      <property name="visible">True</property>
+	      <property name="label">_فتح مكتبة إحتياطية</property>
+	      <property name="use_underline">True</property>
+	      <property name="icon">sIcon.png</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	      <property name="is_important">False</property>
+	      <signal name="clicked" handler="on_btnLoadBackup_clicked" last_modification_time="Thu, 17 Jan 2008 12:52:49 GMT"/>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">True</property>
+	    </packing>
+	  </child>
+
+	  <child>
+	    <widget class="GtkSeparatorToolItem" id="separator">
+	      <property name="visible">True</property>
+	      <property name="draw">True</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">False</property>
+	    </packing>
+	  </child>
+
+	  <child>
+	    <widget class="GtkToolButton" id="btnBackupiPod">
+	      <property name="visible">True</property>
+	      <property name="label">_صنع مكتبة إحتياطية</property>
+	      <property name="use_underline">True</property>
+	      <property name="icon">sBackup.png</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	      <property name="is_important">False</property>
+	      <signal name="clicked" handler="on_btnBackupiPod_clicked" last_modification_time="Thu, 17 Jan 2008 12:53:00 GMT"/>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">True</property>
+	    </packing>
+	  </child>
+
+	  <child>
+	    <widget class="GtkToolButton" id="btnRestoreiPod">
+	      <property name="visible">True</property>
+	      <property name="label">_إستعادة مكتبة إحتياطية</property>
+	      <property name="use_underline">True</property>
+	      <property name="icon">sRestore.png</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	      <property name="is_important">False</property>
+	      <signal name="clicked" handler="on_btnRestoreiPod_clicked" last_modification_time="Thu, 17 Jan 2008 12:53:04 GMT"/>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">True</property>
+	    </packing>
+	  </child>
+
+	  <child>
+	    <widget class="GtkSeparatorToolItem" id="separator1">
+	      <property name="visible">True</property>
+	      <property name="draw">True</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">False</property>
+	    </packing>
+	  </child>
+
+	  <child>
+	    <widget class="GtkToolButton" id="btnAbout">
+	      <property name="visible">True</property>
+	      <property name="label" translatable="yes">حول</property>
+	      <property name="use_underline">True</property>
+	      <property name="stock_id">gtk-about</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	      <property name="is_important">False</property>
+	      <signal name="clicked" handler="on_btnAbout_clicked" last_modification_time="Sat, 19 Jan 2008 17:47:14 GMT"/>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">True</property>
+	    </packing>
+	  </child>
+
+	  <child>
+	    <widget class="GtkToolButton" id="btnQuit">
+	      <property name="visible">True</property>
+	      <property name="label" translatable="yes">خروج</property>
+	      <property name="use_underline">True</property>
+	      <property name="stock_id">gtk-quit</property>
+	      <property name="visible_horizontal">True</property>
+	      <property name="visible_vertical">True</property>
+	      <property name="is_important">False</property>
+	      <signal name="clicked" handler="on_btnQuit_clicked" last_modification_time="Sat, 19 Jan 2008 17:47:19 GMT"/>
+	    </widget>
+	    <packing>
+	      <property name="expand">False</property>
+	      <property name="homogeneous">True</property>
+	    </packing>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="padding">0</property>
+	  <property name="expand">False</property>
+	  <property name="fill">False</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkScrolledWindow" id="scrolledwindow1">
+	  <property name="visible">True</property>
+	  <property name="can_focus">True</property>
+	  <property name="hscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+	  <property name="vscrollbar_policy">GTK_POLICY_AUTOMATIC</property>
+	  <property name="shadow_type">GTK_SHADOW_IN</property>
+	  <property name="window_placement">GTK_CORNER_TOP_LEFT</property>
+
+	  <child>
+	    <widget class="GtkTreeView" id="lstSongs">
+	      <property name="visible">True</property>
+	      <property name="can_focus">True</property>
+	      <property name="headers_visible">True</property>
+	      <property name="rules_hint">False</property>
+	      <property name="reorderable">False</property>
+	      <property name="enable_search">True</property>
+	      <property name="fixed_height_mode">False</property>
+	      <property name="hover_selection">False</property>
+	      <property name="hover_expand">False</property>
+	    </widget>
+	  </child>
+	</widget>
+	<packing>
+	  <property name="padding">0</property>
+	  <property name="expand">True</property>
+	  <property name="fill">True</property>
+	</packing>
+      </child>
+
+      <child>
+	<widget class="GtkStatusbar" id="StatusBar">
+	  <property name="visible">True</property>
+	  <property name="has_resize_grip">True</property>
+	</widget>
+	<packing>
+	  <property name="padding">0</property>
+	  <property name="expand">False</property>
+	  <property name="fill">False</property>
+	</packing>
+      </child>
+    </widget>
+  </child>
+</widget>
+
+</glade-interface>

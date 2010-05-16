@@ -1,0 +1,143 @@
+<?xml version="1.0" ?>
+<Music>
+	<song name="iPod_Control/Music/F00/11-Wth]You.mp3">
+		<album>[Reanimation]</album>
+		<artist>Linkin Park</artist>
+		<title>Wth]You</title>
+		<genre>Nu-Metal</genre>
+		<year>2002</year>
+	</song>
+	<song name="iPod_Control/Music/F00/12-Mssion.mp3">
+		<album>[Reanimation]</album>
+		<artist>Linkin Park</artist>
+		<title>Mssion</title>
+		<genre>Nu-Metal</genre>
+		<year>2002</year>
+	</song>
+	<song name="iPod_Control/Music/F00/13-Ppr-Kut.mp3">
+		<album>[Reanimation]</album>
+		<artist>Linkin Park</artist>
+		<title>Ppr-Kut</title>
+		<genre>Nu-Metal</genre>
+		<year>2002</year>
+	</song>
+	<song name="iPod_Control/Music/F00/18-Kyur4 th Ich.mp3">
+		<album>[Reanimation]</album>
+		<artist>Linkin Park</artist>
+		<title>Kyur4 th Ich</title>
+		<genre>Nu-Metal</genre>
+		<year>2002</year>
+	</song>
+	<song name="iPod_Control/Music/F00/19-1stp Klosr.mp3">
+		<album>[Reanimation]</album>
+		<artist>Linkin Park</artist>
+		<title>1stp Klosr</title>
+		<genre>Nu-Metal</genre>
+		<year>2002</year>
+	</song>
+	<song name="iPod_Control/Music/F00/20-Krwlng.mp3">
+		<album>[Reanimation]</album>
+		<artist>Linkin Park</artist>
+		<title>Krwlng</title>
+		<genre>Nu-Metal</genre>
+		<year>2002</year>
+	</song>
+	<song name="iPod_Control/Music/F01/03-Send Me An Angel.mp3">
+		<album>Moment of Glory</album>
+		<artist>Scorpions</artist>
+		<title>Send Me An Angel</title>
+		<genre>Hard Rock</genre>
+		<year>2000</year>
+	</song>
+	<song name="iPod_Control/Music/F01/04-Wind Of Change.mp3">
+		<album>Moment of Glory</album>
+		<artist>Scorpions</artist>
+		<title>Wind Of Change</title>
+		<genre>Hard Rock</genre>
+		<year>2000</year>
+	</song>
+	<song name="iPod_Control/Music/F01/05-Crossfire (Instrumental).mp3">
+		<album>Moment of Glory</album>
+		<artist>Scorpions</artist>
+		<title>Crossfire (Instrumental)</title>
+		<genre>Hard Rock</genre>
+		<year>2000</year>
+	</song>
+	<song name="iPod_Control/Music/F01/10-Lady Starlight.mp3">
+		<album>Moment of Glory</album>
+		<artist>Scorpions</artist>
+		<title>Lady Starlight</title>
+		<genre>Hard Rock</genre>
+		<year>2000</year>
+	</song>
+	<song name="iPod_Control/Music/F02/Burned.mp3">
+		<album>Dignity</album>
+		<artist>Hilary Duff</artist>
+		<title>Burned</title>
+		<genre>Pop</genre>
+		<year>UNKNOWN</year>
+	</song>
+	<song name="iPod_Control/Music/F02/Danger.mp3">
+		<album>Dignity</album>
+		<artist>Hilary Duff</artist>
+		<title>Danger</title>
+		<genre>Pop</genre>
+		<year>UNKNOWN</year>
+	</song>
+	<song name="iPod_Control/Music/F02/Dignity.mp3">
+		<album>Dignity</album>
+		<artist>Hilary Duff</artist>
+		<title>Dignity</title>
+		<genre>Pop</genre>
+		<year>UNKNOWN</year>
+	</song>
+	<song name="iPod_Control/Music/F02/Never Stop.mp3">
+		<album>Dignity</album>
+		<artist>Hilary Duff</artist>
+		<title>Never Stop</title>
+		<genre>Pop</genre>
+		<year>UNKNOWN</year>
+	</song>
+	<song name="iPod_Control/Music/F02/No work all play.mp3">
+		<album>Dignity</album>
+		<artist>Hilary Duff</artist>
+		<title>No work all play</title>
+		<genre>Pop</genre>
+		<year>UNKNOWN</year>
+	</song>
+	<song name="iPod_Control/Music/F02/Out side of you.mp3">
+		<album>Dignity</album>
+		<artist>Hilary Duff</artist>
+		<title>Out side of you</title>
+		<genre>Pop</genre>
+		<year>UNKNOWN</year>
+	</song>
+	<song name="iPod_Control/Music/F03/Ascencion Of The Spirit.mp3">
+		<album>Sound Asleep Ep</album>
+		<artist>Evanescence</artist>
+		<title>Ascencion Of The Spirit</title>
+		<genre>Gothic Rock</genre>
+		<year>1999</year>
+	</song>
+	<song name="iPod_Control/Music/F03/Even In Death.mp3">
+		<album>Origin</album>
+		<artist>Evanescence</artist>
+		<title>Even In Death</title>
+		<genre>Gothic Rock</genre>
+		<year>2000</year>
+	</song>
+	<song name="iPod_Control/Music/F03/Give Unto Me.mp3">
+		<album>Sound Asleep Ep</album>
+		<artist>Evanescence</artist>
+		<title>Give Unto Me</title>
+		<genre>Gothic Rock</genre>
+		<year>1999</year>
+	</song>
+	<song name="iPod_Control/Music/F03/Missing.mp3">
+		<album>Not For Your Ears</album>
+		<artist>Evanescence</artist>
+		<title>Missing</title>
+		<genre>Gothic Rock</genre>
+		<year>UNKNOWN</year>
+	</song>
+</Music>
